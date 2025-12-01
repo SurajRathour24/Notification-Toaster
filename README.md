@@ -20,9 +20,9 @@ This project demonstrates how to trigger multiple toast messages with smooth aut
 
 ## 📸 Preview
 
-> *(Add real screenshot or GIF here later)*
 
-![Toast Preview]([https://via.placeholder.com/900x350?text=Tailwind+Toast+Notification+Preview](https://github.com/user-attachments/assets/910152b0-51db-4fed-b1dc-19a6dafc5adb"))
+
+![Toast Preview](https://github.com/user-attachments/assets/910152b0-51db-4fed-b1dc-19a6dafc5adb))
 
 ---
 
