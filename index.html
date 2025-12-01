@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div id="toast" class="fixed bottom-t right-5 bg-gray-800 text-white">This is a toaster notification</div>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center">
+    <!-- Toast Container -->
+ 
+
+
+  <script>
+    let createToaster = (config) =>{
+        return function (notification){
+            let div = document.createElement("div");
+            div.className = `fixed z-50 flex flex-col gap-3 py-3 bg-blue-100 px-4 rounded-md ${config.positionX === "right" ? "right-5" : "left-10"} ${config.positionY === "bottom" ? "bottom-5" : "top-10"}`;
+            
+            div.textContent = notification;
+            document.body.appendChild(div);
+
+        }
+    }
+
+    let toaster = createToaster({
+        positionX: "right",
+        positionY: "bottom",
+        theme: 'dark',
+        duration: 3,
+    });
+
+    toaster("This is a dummy notification");
+
+  </script>
 </body>
 </html>
