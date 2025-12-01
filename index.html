@@ -5,28 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        .parent{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
   </head>
   <body
     class="bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center"
   >
     <!-- Toast Container (top-right) -->
-    <div class="parent fixed top-4 right-4 z-50 space-y-3">
-      <!-- Toast Notification -->
-      <div
-        class="max-w-sm w-full bg-slate-900 text-white rounded-2xl shadow-2xl border border-slate-700/70 p-4 flex items-start gap-3 backdrop-blur-lg"
-      >
-        This is Toaster Notification
-      </div>
+    <div class="parent fixed top-4 right-10 z-50 space-y-3">
+     
     </div>
-
-    <script>
-        let createToaster = () =>{
-            return function(){
-                console.log("This is toaster text");
-            }
-        }
-
-        createToaster();
-    </script>
+<script src="script.js"></script>
   </body>
 </html>
